@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>FoodSetGo</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0457e6a12b.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,700,900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div class="banner">
+        FREE DELIVERY on your first order.
+        <a href="" style="text-decoration: underline; color: white;" onclick="">Get your deal!</a>
+    </div>
+
+    <div class="modal" id="login" style="font-family: Montserrat; font-weight: 900; ">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+
+                <div class="modal-header">
+                    <h4 class="modal-title" style="text-align: center;">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+
+                <div class="modal-body mx-3">
+
+                    <div class="md-form mb-5">
+
+                        <label data-error="wrong" data-success="right" for="telnumber">Phone Number:</label>
+                        <input type="text" id="telnumber" class="form-control validate">
+                    </div>
+                    <div class="md-form mb-5">
+
+                        <label data-error="wrong" data-success="right" for="password">Password:</label>
+                        <input type="password" id="password" class="form-control validate">
+                    </div>
+
+                </div>
+
+
+                <div class="modal-footer d-flex justify-content-center">
+                    <span style="display: block;">Don't have an account?<a href="" data-target="#myModal" data-toggle="modal" data-dismiss="modal">Sign Up</a></span>
+
+                    <button id="send" class="btn btn-info" style="display: block;">Submit</button>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="myModal" style="font-family: Montserrat; font-weight: 900; ">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+
+                <div class="modal-header">
+                    <h4 class="modal-title" style="text-align: center;">Sign up to place your order</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+
+                <div class="modal-body mx-3">
+                    <div class="md-form mb-5">
+
+                        <label data-error="wrong" data-success="right" for="fname"> Name:</label>
+                        <input type="text" id="fname" class="form-control validate">
+                    </div>
+
+                    <div class="md-form mb-5">
+
+                        <label data-error="wrong" data-success="right" for="password">Password:</label>
+                        <input type="password" id="password" class="form-control validate">
+                    </div>
+
+                    <div class="md-form mb-5">
+
+                        <label data-error="wrong" data-success="right" for="telnumber">Phone Number:</label>
+                        <input type="text" id="telnumber" class="form-control validate">
+                    </div>
+                </div>
+
+
+                <div class="modal-footer d-flex justify-content-center">
+                    <button id="send" class="btn btn-info">Submit</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <section id="title">
+        <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg navbar-dark" style="padding:0%; ">
+                <a href="#carouselExampleIndicators" class="navbar-brand" style="font-family: Montserrat; font-weight: 900; font-size: 2.5rem; padding-left: 15px;  color: rgb(15, 140, 146);">FoodSetGo</a>
+                <a href="#cuisine" class="nav-link " style="font-weight: 700; color: rgb(15, 140, 146);">Explore</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav" style="align-items: center;">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="" class="nav-link log-in" style="font-weight: 700;  color: rgb(15, 140, 146); padding-bottom: 4%;" data-toggle="modal" data-target="#login">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link" data-toggle="modal" data-target="#myModal" style="font-weight: 700; color: rgb(15, 140, 146);">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <div class="" style="background-color: #ffff; min-height: 1rem;"> </div>
+
+    <section id="car">
+        <div class="row">
+            <div class="col-lg-6">
+                <h1 class="heading">Your Food buddy on the go!</h1>
+                <button type="button" name="button" class="btn but" style="background-color: rgb(15, 140, 146); color: #ffff; font-size: 1.2rem;">Place your Order</button>
+            </div>
+
+            <div class="col-lg-6">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="bg6.jpg" alt="" style="max-width:100%;">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="bg7.jpg" alt="" style="max-width:100%;">
+                        </div>
+
+                        <div class="carousel-item">
+                            <img src="bg8.jpg" alt="" style="max-width:100%;">
+                        </div>
+                    </div>
+
+                    <a class="carousel-control-prev arrow" href="#myCarousel" role="button" data-slide="prev" style="color: rgb(15, 140, 146);">
+                        <span class="carousel-control-prev-icon" aria-hidden="true" style="color: rgb(15, 140, 146);"></span>
+                    </a>
+                    <a class="carousel-control-next arrow" href="#myCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" style="padding: 7% 15%;">
+        <div class="row">
+            <div class="feature-box col-lg-4">
+                <i class="icon far fa-grin-beam fa-4x"></i>
+                <h3 style="font-weight: 700; font-size: 1.25rem;">Lorem Ipsum</h3>
+                <p style="color:#000000 ;">Lorem ipsum dolor sit amet consectetuer</p>
+            </div>
+            <div class="feature-box col-lg-4">
+                <i class="icon fas fa-utensils fa-4x"></i>
+                <h3 style="font-weight: 700; font-size: 1.25rem;">Lorem Ipsum</h3>
+                <p style="color:#000000 ;">Lorem ipsum dolor sit amet consectetuer</p>
+            </div>
+            <div class="feature-box col-lg-4">
+                <i class="icon fas fa-heart fa-4x"></i>
+                <h3 style="font-weight: 700;  font-size: 1.25rem;">Lorem Ipsum</h3>
+                <p style="color:#000000 ;">Lorem ipsum dolor sit amet consectetuer</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="cuisine">
+        <h2 style="font-family: Montserrat; font-weight: 900; padding-top: 5%; text-align: center; ">Cuisines</h2>
+        <div class="row" style="text-align: center;">
+            <div class="cuisine-column col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>French</h3>
+                    </div>
+                    <div class="card-body">
+                        <img src="french.jpg" alt="" class="food">
+                        <button class="btn btn-lg btn-block btn-dark" type="button">Explore</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cuisine-column col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Chinese</h3>
+                    </div>
+                    <div class="card-body">
+                        <img src="chinese.jpg" alt="" class="food">
+                        <button class="btn btn-lg btn-block btn-dark" type="button">Explore</button>
+
+                    </div>
+                </div>
+            </div>
+            <div class="cuisine-column col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Italian</h3>
+                    </div>
+                    <div class="card-body">
+                        <img src="italian.jpg" alt="" class="food">
+                        <button class="btn btn-lg btn-block btn-dark" type="button">Explore</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cuisine-column col-lg-4 col-md-6 col-sm-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Indian</h3>
+                    </div>
+                    <div class="card-body">
+                        <img src="indian.jpg" alt="" class="food">
+                        <button class="btn btn-lg btn-block btn-dark" type="button">Explore</button>
+                    </div>
+                </div>
+            </div>
+            <div class="cuisine-column col-lg-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Mexican</h3>
+                    </div>
+                    <div class="card-body">
+                        <img src="mexican.jpg" alt="" class="food">
+                        <button class="btn btn-lg btn-block btn-dark" type="button">Explore</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer" style="font-weight: 700;">
+            <i class="social-icon fab fa-facebook-f"></i>
+            <i class="social-icon fab fa-instagram"></i>
+            <i class="social-icon fab fa-twitter"></i>
+            <p>© Copyright 2020 FoodSetGo</p>
+        </footer>
+
+</body>
+
+</html>
