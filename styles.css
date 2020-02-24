@@ -1,3 +1,5 @@
+/* Banner */
+
 .banner {
     color: white;
     justify-content: center;
@@ -8,6 +10,8 @@
     height: 60px;
     min-height: inherit;
 }
+
+/* Common */
 
 body {
     font-family: 'Montserrat';
@@ -32,11 +36,30 @@ body {
     font-weight: 700;
 }
 
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    font-weight: 900;
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+h3 {
+    font-family: 'Montserrat';
+font-size: 75%;
+}
+
+/* #car / Carousel section*/
+
 #car {
     background-color: #ffff;
     color: #ffff;
 }
-
 
 .carousel-inner {
   position: relative;
@@ -57,9 +80,7 @@ body {
     height: auto;
 }
 
-.container-fluid {
-    padding: 0% 15% 0%;
-}
+/* Cuisines section*/
 
 #cuisine {
     padding: 100px;
@@ -74,22 +95,15 @@ body {
     padding: 3% 2%;
 }
 
-h1 {
-    font-family: 'Montserrat', sans-serif;
-    line-height: 1.5;
-    font-weight: 900;
-    font-size: 3.5rem;
+.food {
+    height: 12rem;
+    width: 15rem;
 }
 
-h2 {
-    font-weight: 700;
-    font-size: 3rem;
-    line-height: 1.5;
-}
+/* About */
 
-h3 {
-    font-family: 'Montserrat';
-font-size: 75%;
+.container-fluid {
+    padding: 0% 15% 0%;
 }
 
 .heading {
@@ -101,6 +115,8 @@ font-size: 75%;
     color: rgb(15, 140, 146);
 }
 
+/* Features section */
+
 #features {
     padding: 7% 15%;
     text-align: center;
@@ -110,20 +126,11 @@ font-size: 75%;
     color: rgb(15, 140, 146);
 }
 
-.food {
-    height: 12rem;
-    width: 15rem;
-}
-
-#footer {
-    padding: 0% 15% 1%;
-    background-color: #ffff;
-    text-align: center;
-}
-
 .icon {
     margin-bottom: 1rem;
 }
+
+/* Navbar  and modal */
 
 #myCarousel {
     padding-right: 1rem;
@@ -146,15 +153,25 @@ font-size: 75%;
     font-size: 1.2rem;
 }
 
-.social-icon {
-    margin: 20px 10px;
-}
-
 #title {
     background-color: #ededed;
     color: rgb(15, 140, 146);
     font-family: 'Montserrat';
 }
+
+/* Footer section */
+
+#footer {
+    padding: 0% 15% 1%;
+    background-color: #ffff;
+    text-align: center;
+}
+
+.social-icon {
+    margin: 20px 10px;
+}
+
+/* Media Query */
 
 @media (max-width: 1028px) {
     .heading {
